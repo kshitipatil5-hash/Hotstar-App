@@ -38,9 +38,9 @@ const createSlide = () => {
 
   sliders.push(slide);
 
-  if (sliders.length) {
-    sliders[0].style.marginLeft = `calc(-${100 * (sliders.length - 2)}% - ${
-      30 * (sliders.length - 2)
+  if (slideIndex) {
+    sliders[0].style.marginLeft = `calc(-${100 * (slideIndex - 1)}% - ${
+      30 * (slideIndex - 1)
     }px)`;
   }
 };
